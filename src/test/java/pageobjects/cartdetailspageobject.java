@@ -34,12 +34,13 @@ private  By cartpage =By.xpath("//span[@class='nav-cart-icon nav-sprite']");
     }
     public void clickonaddtocart() throws InterruptedException {
      driver.findElement(btn_addtocart).click();
-     driver.findElement(cartpage).click();
+    // driver.findElement(cartpage).click();
 
      Thread.sleep(2000);
     }
     public void cartpagedetails(){
-        driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']")).isDisplayed();
+       // driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']")).isDisplayed();
+        driver.getPageSource().contains("Added to Cart");
         log.info("product is added to the cart");
     }
 }

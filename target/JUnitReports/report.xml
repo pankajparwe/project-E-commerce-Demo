@@ -1,35 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="49.845">
-    <testcase classname="Product Details" name="User is able to select the quantity and add to cart from Product details page" time="49.161">
-        <failure message="element click intercepted: Element &lt;span class=&quot;nav-cart-icon nav-sprite&quot;&gt;&lt;/span&gt; is not clickable at point (1182, 30). Other element would receive the click: &lt;span id=&quot;nav-cart-count&quot; aria-hidden=&quot;true&quot; class=&quot;nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content&quot;&gt;...&lt;/span&gt;&#10;  (Session info: chrome=91.0.4472.77)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'HP-HP', ip: '192.168.43.12', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 83c999e18216ecb64202285a7d1f26b6" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given User is on the product details page...................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.425">
+    <testcase classname="Product Details" name="User is able to select the quantity and add to cart from Product details page" time="32.916">
+        <system-out><![CDATA[Given User is on the product details page...................................passed
 When User selects the product quantity as 2.................................passed
-And User clicks add to cart on the page on product details page.............failed
-Then Product is added to the cart...........................................skipped
-
-StackTrace:
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="nav-cart-icon nav-sprite"></span> is not clickable at point (1182, 30). Other element would receive the click: <span id="nav-cart-count" aria-hidden="true" class="nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content">...</span>
-  (Session info: chrome=91.0.4472.77)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HP-HP', ip: '192.168.43.12', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\hp\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:60713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 83c999e18216ecb64202285a7d1f26b6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at pageobjects.cartdetailspageobject.clickonaddtocart(cartdetailspageobject.java:37)
-	at stepdefs.stepdefs.user_clicks_add_to_cart_on_the_page_on_product_details_page(stepdefs.java:60)
-	at ✽.User clicks add to cart on the page on product details page(file:///C:/Users/hp/IdeaProjects/Project-E-commerce-Demo/src/test/resources/Feature/Product_details.feature:15)
-]]></failure>
+And User clicks add to cart on the page on product details page.............passed
+Then Product is added to the cart...........................................passed
+]]></system-out>
     </testcase>
 </testsuite>

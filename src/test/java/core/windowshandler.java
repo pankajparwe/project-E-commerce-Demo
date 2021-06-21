@@ -14,7 +14,7 @@ import java.util.Set;
 public class windowshandler extends Testcontext {
     private static final Logger logger = LogManager.getLogger(windowshandler.class);
 
-    private static WebDriver driver=null;
+    public static WebDriver driver= null;
 
     public windowshandler(){
 
@@ -36,10 +36,10 @@ public class windowshandler extends Testcontext {
         driver.switchTo().window(nextTab); // switch to product Descp
         log.info("Switched to the new window/tab");
     }
-    public static void quitDriver(){
-        driver.quit();
-        log.info("Driver closed");
-    }
+  //  public static void quitDriver(){
+  //      driver.quit();
+  //      log.info("Driver closed");
+   // }
     public static void switchToOriginalTab() {
         Set<String> handles = driver.getWindowHandles();
         logger.info("List of windows found: " + handles.size());

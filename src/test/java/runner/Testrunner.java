@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
         plugin = {"pretty",
                 "junit:target/JUnitReports/report.xml",// to generate reports
                 "html:target/html/htmlreport.html",
-                "json:target/json/file.json"},
+                "json:target/json/file.json",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         dryRun = false,
         publish = false
 

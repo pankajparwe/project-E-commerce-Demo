@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-06-21T15:46:43.130Z",
+        "start_timestamp": "2021-06-21T18:04:45.819Z",
         "before": [
           {
             "result": {
-              "duration": 14313818700,
+              "duration": 11744671700,
               "status": "passed"
             },
             "match": {
@@ -21,20 +21,24 @@
         "id": "product-details;user-is-able-to-select-the-quantity-and-add-to-cart-from-product-details-page",
         "after": [
           {
+            "output": [
+              "Test case is passed, no screen shot captured"
+            ],
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)\" because \"scrnShot\" is null\r\n\tat stepdefs.Hooks.takeScreenShot(Hooks.java:44)\r\n",
-              "duration": 8000500,
-              "status": "failed"
+              "duration": 12000700,
+              "status": "passed"
             },
             "match": {
               "location": "stepdefs.Hooks.takeScreenShot(io.cucumber.java.Scenario)"
             }
           },
           {
+            "output": [
+              "Browser Closed"
+            ],
             "result": {
-              "error_message": "java.lang.NullPointerException: Cannot invoke \"org.openqa.selenium.WebDriver.quit()\" because \"core.windowshandler.driver\" is null\r\n\tat core.windowshandler.quitDriver(windowshandler.java:40)\r\n\tat stepdefs.Hooks.cleanUp(Hooks.java:36)\r\n",
-              "duration": 15000900,
-              "status": "failed"
+              "duration": 880050400,
+              "status": "passed"
             },
             "match": {
               "location": "stepdefs.Hooks.cleanUp(io.cucumber.java.Scenario)"
@@ -46,7 +50,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14963855800,
+              "duration": 9482542400,
               "status": "passed"
             },
             "line": 13,
@@ -58,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 7983456600,
+              "duration": 880050400,
               "status": "passed"
             },
             "line": 14,
@@ -70,9 +74,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cspan class\u003d\"nav-cart-icon nav-sprite\"\u003e\u003c/span\u003e is not clickable at point (1182, 30). Other element would receive the click: \u003cspan id\u003d\"nav-cart-count\" aria-hidden\u003d\"true\" class\u003d\"nav-cart-count nav-cart-1 nav-progressive-attribute nav-progressive-content\"\u003e...\u003c/span\u003e\n  (Session info: chrome\u003d91.0.4472.77)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027HP-HP\u0027, ip: \u0027192.168.43.12\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u002716\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\hp\\AppData\\Local\\T...}, goog:chromeOptions: {debuggerAddress: localhost:60713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 83c999e18216ecb64202285a7d1f26b6\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat pageobjects.cartdetailspageobject.clickonaddtocart(cartdetailspageobject.java:37)\r\n\tat stepdefs.stepdefs.user_clicks_add_to_cart_on_the_page_on_product_details_page(stepdefs.java:60)\r\n\tat ✽.User clicks add to cart on the page on product details page(file:///C:/Users/hp/IdeaProjects/Project-E-commerce-Demo/src/test/resources/Feature/Product_details.feature:15)\r\n",
-              "duration": 11575662100,
-              "status": "failed"
+              "duration": 6996400200,
+              "status": "passed"
             },
             "line": 15,
             "name": "User clicks add to cart on the page on product details page",
@@ -83,7 +86,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2614149500,
+              "status": "passed"
             },
             "line": 16,
             "name": "Product is added to the cart",
