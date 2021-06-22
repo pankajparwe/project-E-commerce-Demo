@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Feature",
         glue= {"stepdefs"},
-        tags = "@product_details",
+        tags = "@smoke",
         plugin = {"pretty",
                 "junit:target/JUnitReports/report.xml",// to generate reports
                 "html:target/html/htmlreport.html",

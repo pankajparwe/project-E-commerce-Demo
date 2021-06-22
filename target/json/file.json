@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-06-21T18:04:45.819Z",
+        "start_timestamp": "2021-06-22T18:55:02.549Z",
         "before": [
           {
             "result": {
-              "duration": 11744671700,
+              "duration": 5940339700,
               "status": "passed"
             },
             "match": {
@@ -15,17 +15,17 @@
             }
           }
         ],
-        "line": 12,
-        "name": "User is able to select the quantity and add to cart from Product details page",
+        "line": 6,
+        "name": "User is able to see the product details",
         "description": "",
-        "id": "product-details;user-is-able-to-select-the-quantity-and-add-to-cart-from-product-details-page",
+        "id": "product-details;user-is-able-to-see-the-product-details",
         "after": [
           {
             "output": [
               "Test case is passed, no screen shot captured"
             ],
             "result": {
-              "duration": 12000700,
+              "duration": 18001000,
               "status": "passed"
             },
             "match": {
@@ -37,7 +37,7 @@
               "Browser Closed"
             ],
             "result": {
-              "duration": 880050400,
+              "duration": 1376264000,
               "status": "passed"
             },
             "match": {
@@ -50,56 +50,44 @@
         "steps": [
           {
             "result": {
-              "duration": 9482542400,
+              "duration": 15901909500,
               "status": "passed"
             },
-            "line": 13,
-            "name": "User is on the product details page",
+            "line": 7,
+            "name": "User searched for the product",
             "match": {
-              "location": "stepdefs.stepdefs.user_is_on_the_product_details_page()"
+              "location": "stepdefs.stepdefs.user_searched_for_the_product()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 880050400,
+              "duration": 7074404700,
               "status": "passed"
             },
-            "line": 14,
-            "name": "User selects the product quantity as 2",
+            "line": 8,
+            "name": "User click on any product",
             "match": {
-              "location": "stepdefs.stepdefs.user_selects_the_product_quantity_as_2()"
+              "location": "stepdefs.stepdefs.user_click_on_any_product()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6996400200,
+              "duration": 45002500,
               "status": "passed"
             },
-            "line": 15,
-            "name": "User clicks add to cart on the page on product details page",
+            "line": 9,
+            "name": "User is navigated to the new tab and product details are displayed",
             "match": {
-              "location": "stepdefs.stepdefs.user_clicks_add_to_cart_on_the_page_on_product_details_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2614149500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "Product is added to the cart",
-            "match": {
-              "location": "stepdefs.stepdefs.product_is_added_to_the_cart()"
+              "location": "stepdefs.stepdefs.user_is_navigated_to_the_new_tab_and_product_details_are_displayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@product_details"
+            "name": "@smoke"
           }
         ]
       }

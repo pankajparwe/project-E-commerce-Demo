@@ -19,7 +19,7 @@ public class productdetailpageobject {
 
     private final By txt_searchbox= By.id("twotabsearchtextbox");
     private final By btn_searchbox= By.id("nav-search-submit-button");
-    private final By selectproduct = By.xpath("//*[@id=\"search\"]/div[1]/div/div[1]/div/span[3]/div[2]/div[2]/div/span/div/div/div[2]/div[2]/div/div[1]/h2/a/span");
+    private final By selectproduct = By.xpath("//img[@alt='New Apple iPhone 12 Pro Max (256GB) - Graphite']");
     public productdetailpageobject(WebDriver driver){
         this.driver = driver;
     }
@@ -37,8 +37,8 @@ public class productdetailpageobject {
            driver.findElement(selectproduct).click();
        }
        public void displayproductdetails() {
-           switchBrowserToTab();
-           Assert.assertEquals("New Apple iPhone 12 Pro Max (256GB) - Graphite: Amazon.in", driver.getTitle());
+          // switchBrowserToTab();
+           Assert.assertEquals("Amazon.in : New Apple iPhone 12 Pro Max", driver.getTitle());
            log.info("user is on product details page");
        }
 

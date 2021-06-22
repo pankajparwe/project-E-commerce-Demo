@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="33.425">
-    <testcase classname="Product Details" name="User is able to select the quantity and add to cart from Product details page" time="32.916">
-        <system-out><![CDATA[Given User is on the product details page...................................passed
-When User selects the product quantity as 2.................................passed
-And User clicks add to cart on the page on product details page.............passed
-Then Product is added to the cart...........................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.981">
+    <testcase classname="Product Details" name="User is able to see the product details" time="30.559">
+        <system-out><![CDATA[Given User searched for the product.........................................passed
+When User click on any product..............................................passed
+Then User is navigated to the new tab and product details are displayed.....passed
 ]]></system-out>
     </testcase>
 </testsuite>
