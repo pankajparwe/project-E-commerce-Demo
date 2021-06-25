@@ -7,18 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>Project-E-commerce-Demo</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>15</source>
-                    <target>15</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
@@ -84,5 +73,22 @@
         </dependency>
 
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <forkCount>3</forkCount>
+                    <reuseForks>false</reuseForks>
+                    <parallel>methods</parallel>
+                    <threadCount>3</threadCount>
+                    <perCoreThreadCount>false</perCoreThreadCount>
+                    <!-- <useUnlimitedThreads>true</useUnlimitedThreads>-->
+                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

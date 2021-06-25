@@ -1,13 +1,125 @@
 [
   {
-    "line": 2,
+    "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-06-22T18:55:02.549Z",
+        "start_timestamp": "2021-06-25T17:57:56.934Z",
         "before": [
           {
             "result": {
-              "duration": 5940339700,
+              "duration": 18521059300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Open Browser and Navigate",
+        "description": "",
+        "id": "e-commerce-project-web-site-health-check;open-browser-and-navigate",
+        "after": [
+          {
+            "output": [
+              "Test case is passed, no screen shot captured"
+            ],
+            "result": {
+              "duration": 3000200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.takeScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "Browser Closed"
+            ],
+            "result": {
+              "duration": 1090062400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.cleanUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18001100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Opened the Browser",
+            "match": {
+              "location": "stepdefs.stepdefs.user_opened_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12775730700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigated to the app url",
+            "match": {
+              "location": "stepdefs.stepdefs.user_navigated_to_the_app_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97181558500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User is able to see application landing page",
+            "match": {
+              "location": "stepdefs.stepdefs.user_is_able_to_see_application_landing_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@healthcheck"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "E-commerce Project Web Site Health Check",
+    "description": "",
+    "id": "e-commerce-project-web-site-health-check",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/Helthcheck.feature",
+    "tags": [
+      {
+        "name": "@healthcheck",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-25T17:57:57.265Z",
+        "before": [
+          {
+            "result": {
+              "duration": 18467056300,
               "status": "passed"
             },
             "match": {
@@ -25,7 +137,7 @@
               "Test case is passed, no screen shot captured"
             ],
             "result": {
-              "duration": 18001000,
+              "duration": 17001000,
               "status": "passed"
             },
             "match": {
@@ -37,7 +149,7 @@
               "Browser Closed"
             ],
             "result": {
-              "duration": 1376264000,
+              "duration": 5297303000,
               "status": "passed"
             },
             "match": {
@@ -50,7 +162,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15901909500,
+              "duration": 36066062800,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 7074404700,
+              "duration": 6084348000,
               "status": "passed"
             },
             "line": 8,
@@ -74,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 45002500,
+              "duration": 155008900,
               "status": "passed"
             },
             "line": 9,
@@ -88,6 +200,107 @@
         "tags": [
           {
             "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-25T17:59:03.499Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7533430900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.setUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User is able to select the quantity and add to cart from Product details page",
+        "description": "",
+        "id": "product-details;user-is-able-to-select-the-quantity-and-add-to-cart-from-product-details-page",
+        "after": [
+          {
+            "output": [
+              "Test case is passed, no screen shot captured"
+            ],
+            "result": {
+              "duration": 4000300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.takeScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "output": [
+              "Browser Closed"
+            ],
+            "result": {
+              "duration": 1681096100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefs.Hooks.cleanUp(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16752958200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is on the product details page",
+            "match": {
+              "location": "stepdefs.stepdefs.user_is_on_the_product_details_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7354420700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects the product quantity as 2",
+            "match": {
+              "location": "stepdefs.stepdefs.user_selects_the_product_quantity_as_2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9499543400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks add to cart on the page on product details page",
+            "match": {
+              "location": "stepdefs.stepdefs.user_clicks_add_to_cart_on_the_page_on_product_details_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8015458400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Product is added to the cart",
+            "match": {
+              "location": "stepdefs.stepdefs.product_is_added_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@product_details"
           }
         ]
       }

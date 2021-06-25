@@ -32,7 +32,8 @@ public class stepdefs {
 
     @When("User click on any product")
     public void user_click_on_any_product() {
-    testcontext.productdetailpageobject.selectproductfromlist();
+
+        testcontext.productdetailpageobject.selectproductfromlist();
     }
 
 
@@ -66,4 +67,28 @@ public class stepdefs {
         testcontext.cartdetailspageobject.cartpagedetails();
 
     }
+
+    @Given("User Opened the Browser")
+    public void user_opened_the_browser() {
+
+    }
+
+
+
+
+    @When("User navigated to the app url")
+    public void user_navigated_to_the_app_url() {
+        testcontext.driver.get("https://www.amazon.in/");
+
+    }
+    @Then("User is able to see application landing page")
+    public void user_is_able_to_see_application_landing_page() {
+        testcontext.helthcheckpageoblect.assertamazonhomepage();
+
+
+    }
+
+
 }
+
+

@@ -12,12 +12,13 @@ import java.util.concurrent.TimeUnit;
 
 @Log4j2
 public class Testcontext {
-    private static final Logger log = LogManager.getLogger(Testcontext.class);
+  //  private static final Logger log = LogManager.getLogger(Testcontext.class);
     private static final Logger logger = LogManager.getLogger(Testcontext.class);
     public WebDriver driver;
     public Scenario scn;
     public cartdetailspageobject cartdetailspageobject;
     public productdetailpageobject productdetailpageobject;
+    public helthcheckpageoblect helthcheckpageoblect;
 
     public Testcontext() {
     }
@@ -34,5 +35,6 @@ public class Testcontext {
     public void intializePageObjects(){
         cartdetailspageobject =new cartdetailspageobject(driver);
         productdetailpageobject= new productdetailpageobject(driver);
+        helthcheckpageoblect =new helthcheckpageoblect(driver);
     }
 }
