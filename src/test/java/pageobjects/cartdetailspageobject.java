@@ -12,8 +12,8 @@ import java.security.Key;
 
 @Log4j2
 public class cartdetailspageobject {
-  //  private static final Logger log = LogManager.getLogger(cartdetailspageobject.class);
-    private static final Logger logger = LogManager.getLogger(cartdetailspageobject.class);
+  // private static final Logger log = LogManager.getLogger(cartdetailspageobject.class);
+ //   private static final Logger logger = LogManager.getLogger(cartdetailspageobject.class);
      WebDriver driver;
 
 private  By productquantity= By.xpath("//select[@id='quantity']");

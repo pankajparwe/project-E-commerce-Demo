@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="131.857">
-    <testcase classname="E-commerce Project Web Site Health Check" name="Open Browser and Navigate" time="129.959">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="77.829">
+    <testcase classname="E-commerce Project Web Site Health Check" name="Open Browser and Navigate" time="21.701">
         <system-out><![CDATA[Given User Opened the Browser...............................................passed
 When User navigated to the app url..........................................passed
 Then User is able to see application landing page...........................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="Product Details" name="User is able to see the product details" time="66.181">
-        <system-out><![CDATA[Given User searched for the product.........................................passed
+    <testcase classname="Product Details" name="User is able to see the product details" time="29.086">
+        <failure message="expected:&lt;[Buy ASUS Celeron Dual Core - (4 GB/1 TB HDD/Windows 10 Home) X515MA-BR004T Thin and Light Laptop (15.6 inch, Transparent Silver, 1.80 Kg Online at Low Prices in India - Amazon.in]&gt; but was:&lt;[Amazon.in : laptop]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given User searched for the product.........................................passed
 When User click on any product..............................................passed
-Then User is navigated to the new tab and product details are displayed.....passed
-]]></system-out>
+Then User is navigated to the new tab and product details are displayed.....failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<[Buy ASUS Celeron Dual Core - (4 GB/1 TB HDD/Windows 10 Home) X515MA-BR004T Thin and Light Laptop (15.6 inch, Transparent Silver, 1.80 Kg Online at Low Prices in India - Amazon.in]> but was:<[Amazon.in : laptop]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at pageobjects.productdetailpageobject.displayproductdetails(productdetailpageobject.java:54)
+	at stepdefs.stepdefs.user_is_navigated_to_the_new_tab_and_product_details_are_displayed(stepdefs.java:42)
+	at ✽.User is navigated to the new tab and product details are displayed(file:///C:/Users/hp/IdeaProjects/Project-E-commerce-Demo/src/test/resources/Feature/Product_details.feature:9)
+]]></failure>
     </testcase>
-    <testcase classname="Product Details" name="User is able to select the quantity and add to cart from Product details page" time="50.869">
+    <testcase classname="Product Details" name="User is able to select the quantity and add to cart from Product details page" time="24.771">
         <system-out><![CDATA[Given User is on the product details page...................................passed
 When User selects the product quantity as 2.................................passed
 And User clicks add to cart on the page on product details page.............passed

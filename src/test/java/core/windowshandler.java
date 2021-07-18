@@ -12,7 +12,7 @@ import java.util.Set;
 
 @Log4j2
 public class windowshandler extends Testcontext {
-    private static final Logger logger = LogManager.getLogger(windowshandler.class);
+ //   private static final Logger logger = LogManager.getLogger(windowshandler.class);
 
     public static WebDriver driver= null;
 
@@ -42,12 +42,12 @@ public class windowshandler extends Testcontext {
    // }
     public static void switchToOriginalTab() {
         Set<String> handles = driver.getWindowHandles();
-        logger.info("List of windows found: " + handles.size());
-        logger.info("Windows handles: " + handles.toString());
+        log.info("List of windows found: " + handles.size());
+        log.info("Windows handles: " + handles.toString());
         Iterator<String> it = handles.iterator();
         String original = (String)it.next();
         driver.switchTo().window(original);
-        logger.info("Switched to the original window/tab");
+        log.info("Switched to the original window/tab");
     }
 
 

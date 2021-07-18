@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Selenix Test Reports</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 25, 2021 11:27:53 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 18, 2021 04:32:43 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -72,6 +77,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,7 +85,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@product_details</a><a class="dropdown-item" href="#">@healthcheck</a><a class="dropdown-item" href="#">@smoke</a>
+<a class="dropdown-item" href="#">@healthcheck</a><a class="dropdown-item" href="#">@product_details</a><a class="dropdown-item" href="#">@smoke</a>
 </ul>
 </li>
 </ul>
@@ -92,7 +98,7 @@
           <div class="test-detail">
             <p class="name">E-commerce Project Web Site Health Check</p>
             <p class="text-sm">
-              <span>23:27:57 pm</span> / <span>00:02:09:687</span>
+              <span>16:32:48 pm</span> / <span>00:00:21:321</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -101,9 +107,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">E-commerce Project Web Site Health Check</h5>
-<span class='badge badge-success'>06.25.2021 23:27:57</span>
-<span class='badge badge-danger'>06.25.2021 23:30:06</span>
-<span class='badge badge-default'>00:02:09:687</span>
+<span class='badge badge-success'>07.18.2021 16:32:48</span>
+<span class='badge badge-danger'>07.18.2021 16:33:09</span>
+<span class='badge badge-default'>00:00:21:321</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -153,26 +159,26 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Product Details</p>
             <p class="text-sm">
-              <span>23:27:57 pm</span> / <span>00:01:57:085</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>16:33:09 pm</span> / <span>00:00:54:147</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Product Details</h5>
-<span class='badge badge-success'>06.25.2021 23:27:57</span>
-<span class='badge badge-danger'>06.25.2021 23:29:54</span>
-<span class='badge badge-default'>00:01:57:085</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<h5 class="test-status text-fail">Product Details</h5>
+<span class='badge badge-success'>07.18.2021 16:33:09</span>
+<span class='badge badge-danger'>07.18.2021 16:34:03</span>
+<span class='badge badge-default'>00:00:54:147</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
 </div>
@@ -181,10 +187,13 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="4"><span class="badge log pass-bg mr-2">Pass</span>User is able to see the product details</div>
+        <div class="node" id="10"><span class="badge log fail-bg mr-2">Fail</span>User is able to see the product details</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepdefs.stepdefs.user_searched_for_the_product()">
                 <span>Given User searched for the product</span>
@@ -196,15 +205,27 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefs.stepdefs.user_is_navigated_to_the_new_tab_and_product_details_are_displayed()">
+              <div class="step fail-bg" title="stepdefs.stepdefs.user_is_navigated_to_the_new_tab_and_product_details_are_displayed()">
                 <span>Then User is navigated to the new tab and product details are displayed</span>
       <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Buy ASUS Celeron Dual Core - (4 GB/1 TB HDD/Windows 10 Home) X515MA-BR004T Thin and Light Laptop (15.6 inch, Transparent Silver, 1.80 Kg Online at Low Prices in India - Amazon.in]> but was:<[Amazon.in : laptop]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at pageobjects.productdetailpageobject.displayproductdetails(productdetailpageobject.java:54)
+	at stepdefs.stepdefs.user_is_navigated_to_the_new_tab_and_product_details_are_displayed(stepdefs.java:42)
+	at ✽.User is navigated to the new tab and product details are displayed(file:///C:/Users/hp/IdeaProjects/Project-E-commerce-Demo/src/test/resources/Feature/Product_details.feature:9)
+</textarea>
+      
       </div>
               </div>
               <div class="step pass-bg" title="AFTER">
                 <span>stepdefs.Hooks.takeScreenShot(io.cucumber.java.Scenario)</span>
-      <div>Test case is passed, no screen shot captured
-      </div>
+      <div>Failed Step Name: User is able to see the product details
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -221,7 +242,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>User is able to select the quantity and add to cart from Product details page</div>
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User is able to select the quantity and add to cart from Product details page</div>
       </div>
     </div>
         <div class="collapse">
@@ -275,26 +296,26 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@product_details</p>
+<p class="name">org.junit.ComparisonFailure</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@product_details</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -305,13 +326,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:29:03 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:33:33 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='15'>User is able to select the quantity and add to cart from Product details page</a>
+<a href="#" class="linked" test-id='9' id='14'>Then User is navigated to the new tab and product details are displayed</a>
 <div class="">
-<span class="badge badge-default">Product Details.User is able to select the quantity and add to cart from Product details page</span>
+<span class="badge badge-default">Product Details.User is able to see the product details.Then User is navigated to the new tab and product details are displayed</span>
 </div>
 </td>
 </tr>
@@ -319,6 +340,22 @@
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
@@ -343,7 +380,7 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:27:57 pm</td>
+<td>16:32:48 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Open Browser and Navigate</a>
 <div class="">
@@ -358,15 +395,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@smoke</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@product_details</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@product_details</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -379,7 +416,45 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:27:57 pm</td>
+<td>16:33:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='9' id='17'>User is able to select the quantity and add to cart from Product details page</a>
+<div class="">
+<span class="badge badge-default">Product Details.User is able to select the quantity and add to cart from Product details page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:32:48 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Open Browser and Navigate</a>
 <div class="">
@@ -387,11 +462,11 @@
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>23:27:57 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:33:09 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='4'>User is able to see the product details</a>
+<a href="#" class="linked" test-id='9' id='10'>User is able to see the product details</a>
 <div class="">
 <span class="badge badge-default">Product Details.User is able to see the product details</span>
 </div>
@@ -414,25 +489,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 25, 2021 11:27:53 pm</h3>
+<h3>Jul 18, 2021 04:32:43 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 25, 2021 11:30:08 pm</h3>
+<h3>Jul 18, 2021 04:34:05 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>2</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -448,12 +523,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> features passed
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -471,9 +546,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='66%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='33%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -491,9 +566,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>16</b> steps passed</small></div>
+<div><small data-tooltip='93%'><b>15</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='6%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -510,7 +585,7 @@
 </div></div>
 <script>
 var timeline = {
-"E-commerce Project Web Site Health Check":129.687,"Product Details":117.085
+"E-commerce Project Web Site Health Check":21.321,"Product Details":54.147
 };
 </script>
 <div class="row">
@@ -520,14 +595,6 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@product_details</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@healthcheck</td>
 <td>1</td>
 <td>0</td>
@@ -536,12 +603,20 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@smoke</td>
-<td>2</td>
+<td>@product_details</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
+</tr>
+<tr>
+<td>@smoke</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -552,19 +627,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 1,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
-failChild: 0,
+passChild: 2,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 16,
-failGrandChild: 0,
+passGrandChild: 15,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,

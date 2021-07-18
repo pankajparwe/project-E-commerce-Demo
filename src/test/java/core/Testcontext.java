@@ -28,7 +28,7 @@ public class Testcontext {
          log.info("Browser invoked");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
-        logger.info("Driver maximized and implicit time out set to 20 seconds");
+        log.info("Driver maximized and implicit time out set to 20 seconds");
     }
 
 

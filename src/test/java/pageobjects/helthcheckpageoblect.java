@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 @Log4j2
 public class helthcheckpageoblect {
   //  private static final Logger log = LogManager.getLogger(productdetailpageobject.class);
-  //  private static final Logger logger = LogManager.getLogger(productdetailpageobject.class);
+  // private static final Logger logger = LogManager.getLogger(productdetailpageobject.class);
     WebDriver driver;
 
     public helthcheckpageoblect(WebDriver driver){
