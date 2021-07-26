@@ -20,6 +20,7 @@ public class Testcontext {
     public productdetailpageobject productdetailpageobject;
     public helthcheckpageoblect helthcheckpageoblect;
 
+
     public Testcontext() {
     }
 
@@ -36,5 +37,6 @@ public class Testcontext {
         cartdetailspageobject =new cartdetailspageobject(driver);
         productdetailpageobject= new productdetailpageobject(driver);
         helthcheckpageoblect =new helthcheckpageoblect(driver);
+
     }
 }

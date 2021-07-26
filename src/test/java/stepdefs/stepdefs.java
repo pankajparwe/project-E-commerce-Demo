@@ -39,7 +39,9 @@ public class stepdefs {
 
     @Then("User is navigated to the new tab and product details are displayed")
     public void user_is_navigated_to_the_new_tab_and_product_details_are_displayed() {
+     //   testcontext.windowshandler.switchBrowserToTab();
         testcontext.productdetailpageobject.displayproductdetails();
+
     }
 
 

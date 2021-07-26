@@ -7,11 +7,14 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import core.windowshandler;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static core.windowshandler.switchBrowserToTab;
+
+
+
 @Log4j2
 public class productdetailpageobject {
   //  private static final Logger log = LogManager.getLogger(productdetailpageobject.class);
@@ -22,7 +25,7 @@ public class productdetailpageobject {
     private final By txt_searchbox= By.id("twotabsearchtextbox");
     private final By btn_searchbox= By.id("nav-search-submit-button");
  //   private final By selectproduct = By.xpath("//img[@alt='New Apple iPhone 12 Pro Max (256GB) - Graphite']");
-    String pagetitleasuslaptop="Buy ASUS Celeron Dual Core - (4 GB/1 TB HDD/Windows 10 Home) X515MA-BR004T Thin and Light Laptop (15.6 inch, Transparent Silver, 1.80 Kg Online at Low Prices in India - Amazon.in";
+    String pagetitleasuslaptop="Amazon.in: Buy HP 15 Thin & Light 15.6\"(39.62cms) FHD Laptop (11th Gen Intel Core i5-1135G7, 8GB DDR4, 1TB HDD, Windows 10 Home, MS Office, Integrated Graphics, FPR, Natural Silver, 1.76 Kg), 15s-du3032TU Online at Low Prices in India | HP Reviews & Ratings";
     public productdetailpageobject(WebDriver driver){
         this.driver = driver;
     }
@@ -42,7 +45,7 @@ public class productdetailpageobject {
            //ASUS Celeron Dual Core
            for(WebElement laptop : laptops)
            {
-               if(laptop.getText().contains("ASUS Celeron Dual Core")){
+               if(laptop.getText().contains("HP 15 Thin & Light 15.6")){
                    laptop.click();
                }
            }
@@ -50,7 +53,11 @@ public class productdetailpageobject {
      //   driver.findElement(selectproduct).click();
        }
        public void displayproductdetails() {
-          // switchBrowserToTab();
+        windowshandler windowshandler =new windowshandler();
+        windowshandler.switchBrowserToTab();
+
+
+
            Assert.assertEquals(pagetitleasuslaptop, driver.getTitle());
            log.info("user is on product details page");
        }
